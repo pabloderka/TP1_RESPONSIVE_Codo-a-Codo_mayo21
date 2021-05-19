@@ -1,0 +1,413 @@
+body {
+    padding-top: 10px;
+    background-color: rgb(255, 21, 79);
+    transition: 0.5s;
+    font-family: 'Source Sans Pro', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body a {
+    text-decoration: none;
+}
+
+
+.centrado{
+    padding-bottom: 0 .8em;
+}
+
+.site-branding{
+    margin-bottom: 30px;
+}
+
+.site-branding h1 {
+    color:rgb(223, 227, 227);
+    font-weight: bold;
+    font-size: 65px;
+    line-height: 1;
+    transition: 0.5s;
+}
+
+.site-branding h3 {
+    color: floralwhite;
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.menu-section{
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+    border-bottom: 1px solid hsl(0,0%);
+}
+.menu-simple-simple {
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+}
+.menu-simple-simple ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+.menu-simple-simple li {
+    margin: 1px;
+}
+
+.menu-simple-simple ul a {
+    display: block;
+    text-decoration: none;
+    color: rgb(223, 227, 227);
+    padding: .6em 1em;
+    transition: 0.3s;
+    border: 1px solid rgb(223, 227, 227);
+}
+
+.menu-simple-simple ul a:active {
+    color: rgb(245, 61, 107);
+
+}
+
+.menu-simple-simple ul a:hover {
+    color: rgb(245, 61, 107);
+    background: rgb(223, 227, 227);
+}
+
+.menu-simple-simple li {
+flex:1 0 auto;
+text-align: center;
+}
+
+.quote {
+    width: 68%;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.blockquote p {
+font-size: 40px;
+line-height: 1;
+color: rgb(223, 227, 227);
+transition: 0.5s;
+font-weight: 600;
+}
+
+.blockquote-footer {
+    font-size: 20px;
+    color: #033244;
+    transition: 0.5s;
+}
+
+
+.cartas {
+    margin-bottom: 50px;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:5px;
+    margin: -3px;
+    
+}
+
+
+.cards img {
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.cards :hover {
+    opacity: 1;
+}
+
+.card-body {
+    background-color:  rgb(223, 227, 227);
+    padding: 12px;
+    margin-top: 1px;
+}
+
+.card-body h5 {
+    color: rgb(255, 21, 79);
+    font-weight: 600;
+    font-size: 20px;
+}
+.card-body p {
+font-size: 15px;
+}
+
+.card-body a {
+    display: block;
+    text-decoration: none;
+    color:rgb(255, 21, 79);
+    transition: 0.35s;
+}
+
+.card-body a:hover {
+    background-color: rgb(255, 21, 79);
+    color:rgb(223, 227, 227);
+}
+
+.foot {
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(223, 227, 227);
+    border-top: 1px solid rgb(223, 227, 227);
+    padding-top: 10px;
+    justify-content: space-between;
+margin-top: auto;
+}
+
+.foot-msj p {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.foot-msj span {
+    font-size: 16px;
+    font-weight: 600;
+    color: #033244;
+}
+
+.foot-social a {
+    text-decoration: none;
+    color: rgb(223, 227, 227);
+    display: block;
+    font-size: 14px;
+}
+.video {
+    position: relative;
+    padding-bottom: 56.25%; /* 16/9 ratio */
+    padding-top: 30px; /* IE6 workaround*/
+    height: 0;
+    overflow: hidden;
+    }
+    
+    .video iframe,
+    .video object,
+    .video embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
+
+.about {
+    color:rgb(223, 227, 227);
+}
+
+.about h6 small {
+    color:#033244;
+}
+
+
+
+/* RESPONSIVE 600 a 1023 px a partir de aquí ---------------------------- */
+
+@media all and (min-width: 600px) and (max-width:1023px){
+    body {
+        background-color:rgb(223, 227, 227);
+    }
+
+    .site-branding h1 {
+        color:#033244;
+        font-size: 55px;
+    }
+
+    .site-branding h3 {
+        opacity: .65;
+        color: #033244;
+    }
+
+    .menu-simple-simple ul a {
+        font-size: 85%;
+        color: #033244;
+        border: 1px solid #033244;
+
+    }
+
+    .menu-simple-simple ul a:hover {
+        background-color: #033244;
+        color: rgb(223, 227, 227);
+    }
+
+    .blockquote p {
+        font-size: 36px;
+        color: rgb(255, 21, 79);
+        }
+        
+        .blockquote-footer {
+            font-size: 17px;
+            color: #033244;
+        }
+    
+    p{
+        font-size: 12px;
+    }    
+
+    .card-body {
+        background-color: #033244;
+    }
+    
+    .card-body h5 {
+        font-size: 20px;
+    }
+
+    .card-body p {
+        font-size: 14px;
+    }
+
+    .card-body a {
+        color: rgb(255, 21, 79);
+    }
+    
+    .card-body a:hover {
+        background-color:rgb(255, 21, 79);
+        color: rgb(223, 227, 227);
+    }
+    .card-text{
+        color: rgb(223, 227, 227);
+    }
+    .foot-msj p {
+        font-size: 14px;
+    }
+    .foot-social a {
+        font-size: 12px;
+    }
+    .about {
+        color:rgb(255, 21, 79);
+    }
+    
+
+    .about h6 small {
+        color:#033244;
+    }
+
+    .foot {
+        color: rgb(255, 21, 79);
+        border-top: 1px solid #033244;
+
+    }
+
+    .foot-social a {
+        color:rgb(255, 21, 79);
+    }
+
+    .foot-msj p span {
+        color:#033244;
+        font-size: 14px;
+    }
+    
+
+}
+/* fin RESPONSIVE 600 a 1023 px ------------------------- */
+
+
+
+
+
+/* RESPONSIVE 0 a 599 px a partir de aquí ---------------------------- */
+@media all and (max-width:599px){
+    body {
+        background-color:#021f2b;
+    }
+
+    .site-branding h1 {
+        color:rgb(255, 21, 79);
+        font-size: 40px;
+    }
+
+    .site-branding h3 {
+        opacity: .5;
+    }
+
+    .menu-simple-simple ul {
+        display: block;
+    }
+
+    .menu-simple-simple li {
+        margin: -1px;
+    }
+
+    .menu-simple-simple a {
+        font-size: 78%;
+    }
+
+    .menu-simple-simple ul a:hover {
+        background-color: rgb(255, 21, 79);
+        color: rgb(223, 227, 227);
+    }
+
+    .blockquote p {
+        font-size: 26px;
+        color: rgb(223, 227, 227);
+
+        }
+        
+        .blockquote-footer {
+            font-size: 15px;
+            color: rgb(255, 21, 79);            
+        }
+
+    p{
+        font-size: 12px;
+    }   
+    
+    .card-body {
+        background-color: rgb(255, 21, 79);
+    }
+    .card-body p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+    
+    .card-body a {
+        color: rgb(223, 227, 227);
+    }
+    
+    .card-body a:hover {
+        background-color:#033244;
+        color: rgb(223, 227, 227);
+    }
+    .card-text {
+        color: #033244;
+
+    }
+
+
+    .foot-msj p {
+        font-size: 12px;
+    }
+    .foot-social a {
+        font-size: 10px;
+    }
+
+    .about h4 {
+        font-size: 122%;
+    }
+    .about h5 {
+        font-size: 110%;
+    }
+
+    .about h6 {
+        font-size: 80%;
+    }
+
+    .about h6 small {
+        color:rgb(255, 21, 79);
+    }
+    .foot-msj p span {
+        color: rgb(255, 21, 79);
+        font-size: 12px;
+    }
+
+}
+/* fin RESPONSIVE hasta 599px ------------------------- */
+
+
